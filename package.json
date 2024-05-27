@@ -1,0 +1,28 @@
+{
+  "name": "solana-send-tx-benchmark",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/index.js",
+  "engines": {
+    "node": ">= 20"
+  },
+  "scripts": {
+    "prestart": "$npm_execpath run build",
+    "start": "node build/index.js",
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/convict": "^6.1.6",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.91.7",
+    "axios": "^1.6.8",
+    "bs58": "^5.0.0",
+    "convict": "^6.2.4",
+    "dotenv": "^16.4.5"
+  }
+}
